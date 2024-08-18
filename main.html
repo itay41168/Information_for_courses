@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/mainStyle.css">
+    <link rel="stylesheet" type="text/css" href="CSS/menu.css">
+    <title>דף בית</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="../project/main.html">דף בית</a></li>
+            <li><a href="../project/Includes/event.html">חופשות ואירועים</a></li>
+            <li><a href="../project/Includes/registration.html">הרשמה לקורס</a></li>
+        </ul>
+        <img src="../project/images/logo.jpg" alt="Logo">
+    </div>
+
+    <div class="main-content">
+        <h1>ברוכים הבאים למכללת אורנים</h1>
+        <p>כאן תוכלו למצוא מידע על קורסים, חוות דעת, חופשות ואירועים ועוד.</p>
+        
+            <form id="searchForm">
+                <h2>חיפוש קורסים</h2>
+                <label for="course-name">שם קורס:</label>
+                <input type="text" id="courseName" name="course-name">
+
+                <label for="lecturer-name">שם מרצה:</label>
+                <input type="text" id="lecturerName" name="lecturer-name">
+
+                <label for="year">שנתון:</label>
+                <select id="year" name="year">
+                    <option></option>
+                    <option value="א">א</option>
+                    <option value="ב">ב</option>
+                    <option value="ג">ג</option>
+                </select>
+
+                <label for="semester">סמסטר:</label>
+                <select id="semester" name="semester">
+                    <option></option>
+                    <option value="א">א</option>
+                    <option value="ב">ב</option>
+                    <option value="ק">ק</option>
+                </select>
+
+                <button type="submit">חפש קורסים</button>
+            </form>
+
+       
+    </div>
+
+    <script src="../project/JS/mainJs.js">
+    </script>
+    
+</body>
+</html>

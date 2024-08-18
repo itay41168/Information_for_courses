@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/addOpinionStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../project/CSS/menu.css">
+    <title>חוות דעת על קורס</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="../main.html">דף בית</a></li>
+            <li><a href="event.html">חופשות ואירועים</a></li>
+            <li><a href="registration.html">הרשמה לקורס</a></li>
+        </ul>
+        <img src="../../project/images/logo.jpg" alt="Logo">
+    </div>
+
+    <div class="container">
+        <h1>חוות דעת על הקורס</h1>
+        <form>
+            <label for="name">שם הסטודנט</label>
+            <input type="text" id="name" name="name" >
+
+            <label for="rating"> רמת קושי הקורס</label>
+            <select id="rating" name="rating" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="review">כתיבת הביקורת</label>
+            <textarea id="reviewId" name="review" rows="4" ></textarea>
+
+        </form>
+        <button id="clickAddOpinion">שלח חוות דעת</button>
+    </div>
+
+    <script src="../../project/JS/addOpinionJs.js">
+    
+
+
+    </script>
+
+</body>
+</html>

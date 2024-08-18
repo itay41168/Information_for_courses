@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/registrationStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../project/CSS/menu.css">
+    <title>הרשמה לקורס</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="../main.html">דף בית</a></li>
+            <li><a href="../Includes/event.html">חופשות ואירועים</a></li>
+            <li><a href="../Includes/registration.html">הרשמה לקורס</a></li>
+        </ul>
+        <img src="../../project/images/logo.jpg" alt="Logo">
+    </div>
+
+    <div class="main-content">
+        <h2>הרשמה לקורס</h2>
+        <form id="registrationForm">
+        
+                <label for="id">תעודת זהות</label>
+                <input type="text" id="id">
+            
+                <label for="name">שם מלא</label>
+                <input type="text" id="name" name="name" >
+            
+                <label for="email">כתובת דוא"ל</label>
+                <input type="text" id="email" name="email" >
+         
+                <label for="semesterId">סמסטר</label>
+                <select id="semesterId" name="course" >
+                    <option value="">בחר סמסטר</option>
+                    <option value="א">א</option>
+                    <option value="ב">ב</option>
+                    <option value="ק">ק</option>
+                </select>
+            
+                <label for="courseId">בחירת קורס</label>
+                <select id="courseId" name="course" >
+                    <option value="">בחר קורס</option>
+                    <option value="מבוא למדעי המחשב">מבוא למדעי המחשב</option>
+                    <option value="מבני נתונים">מבני נתונים</option>
+                    <option value="פיזיקה">פיזיקה</option>
+                    <option value="תכנות אינטרנט">תכנות אינטרנט</option>
+                    <option value="מתמטיקה דיסקרטית">מתמטיקה דיסקרטית</option>
+                </select>
+        
+                <button type="submit">שליחה</button>
+        </form>
+    </div>
+
+    <script src="../../project/JS/registrationJs.js">
+         
+    </script>
+</body>
+</html>

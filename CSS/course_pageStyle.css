@@ -1,0 +1,80 @@
+.main-content {
+   padding: 20px;
+   max-width: 100%;
+   height: 1000px;
+   display: flex;
+}
+
+.course-details {
+   height: 500px;
+   max-width: 500px;
+   margin-bottom: 20px;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.course-details h2 {
+   margin: 0;
+   background-color: #014D46;
+   color: #fff;
+   padding: 10px;
+   border-radius: 5px;
+}
+.course-details p {
+   margin: 5px 0;
+}
+
+.openSyllabus{
+   cursor: pointer;
+   color: blue;
+}
+
+.openSyllabus :hover{
+   color: rgb(74, 197, 43);
+
+}
+
+#imgSyllabus{
+   display: none;
+   margin: 10px auto;
+   width: 50%;
+   height: 850px;
+   border-radius: 5px;
+}
+
+.buttons {
+   margin-top: 20px;
+   display: flex;
+   flex-direction:column;
+}
+.buttons button {
+   margin-right: 10px;
+   width: 250px;
+   margin-top: 10px;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   background-color: #014D46;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+}
+.buttons button:hover {
+   background-color: #0ae0cb;
+}
+
+
+@media (max-width: 1700px) {
+   .main-content{
+      flex-direction: column;
+        align-items: flex-start;
+   }
+
+   #imgSyllabus{
+      display: none;
+      margin: 0px;
+      width: 100%;
+   }
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/opinionStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../project/CSS/menu.css">
+    <title>חוות דעת על קורס</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="../main.html">דף בית</a></li>
+            <li><a href="event.html">חופשות ואירועים</a></li>
+            <li><a href="registration.html">הרשמה לקורס</a></li>
+        </ul>
+        <img src="../../project/images/logo.jpg" alt="Logo">
+    </div>
+
+    <div class="main-content"> 
+        <div class="course-description">
+            <h2 id="nameId"></h2>
+            <p><strong>סוג הקורס:</strong><span id="courseTypeId"></span></p>
+            <p><strong>קהל יעד:</strong> <span id="crowdId"> </span></p>
+            <p><strong>דרישות קדם:</strong> <span id="requirmentId"></span></p>
+            <p><strong>שם המרצה:</strong> <span id="lecturerId"> </span></p>
+            <p><strong>קושי הקורס:</strong> </p>
+
+            <div class="star-rating">
+                <span id="star1" class="star">&#9733;</span>
+                <span id="star2" class="star">&#9733;</span>
+                <span id="star3" class="star">&#9733;</span>
+                <span id="star4" class="star">&#9733;</span>
+                <span id="star5" class="star">&#9733;</span>
+            </div>
+        </div>
+
+        <div class="opinionTable">
+            <h1>חוות דעת</h1>
+            <table id="tableBody">
+                <thead>
+                        <th>שם</th>
+                        <th>רמת קושי</th>
+                        <th>חוות הדעת</th>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        <button id="click"></button>
+        </div>
+    </div>
+
+    <script src="../../project/JS/opinionJs.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/eventStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../project/CSS/menu.css">
+
+
+    <title>לוח שנה עם חגים ובחינות</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="../main.html">דף בית</a></li>
+            <li><a href="event.html">חופשות ואירועים</a></li>
+            <li><a href="registration.html">הרשמה לקורס</a></li>
+        </ul>
+        <img src="../../project/images/logo.jpg" alt="Logo">
+    </div>
+
+    <h1>לוח שנה עם חגים ובחינות</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>חודש</th>
+                <th> חגים ואירועים </th>
+                <th>תקופת בחינות</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>אוקטובר</td>
+                <td class="holiday">16-29 (סוכות)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>נובמבר</td>
+                <td> 1 (תחילת שנת הלימודים)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>דצמבר</td>
+                <td class="holiday">25-31 (חנוכה)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ינואר</td>
+                <td class="holiday"> 14 (טו בשבט)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>פברואר</td>
+                <td></td>
+                <td>תקופת בחינות מועדי א: 1-10 <br> תקופת בחינות מועדי ב: 12-30 </td>    
+
+            </tr>
+            <tr>
+                <td>מרץ</td>
+                <td class="holiday">16 (פורים)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>אפריל</td>
+                <td class="holiday">15-26 (פסח)
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>מאי</td>
+                <td class="holiday">2 (יום השואה),
+                    8 (יום הזיכרון),
+                    9 (יום העצמאות),
+                    29 (שבועות)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>יוני</td>
+                <td>24 (סוף שנת הלימודים)</td>
+                <td>תקופת בחינות מועדי א: 24-30</td>
+            </tr>
+            <tr>
+                <td>יולי</td>
+                <td></td>
+                <td>המשך תקופת בחינות מועדי א: 1-10 <br> תקופת בחינות מועדי ב: 11-30 </td>    
+            </tr>
+            <tr>
+                <td>אוגוסט</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ספטמבר</td>
+                <td class="holiday">7-9 (ראש השנה)</td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+        document.getElementById('menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

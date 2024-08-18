@@ -1,0 +1,110 @@
+.main-content{
+    padding: 20px;
+    display: flex;
+}
+
+.course-description {
+    padding: 20px;
+    max-width: 800px; /* קטינת התוכן על מנת להגביר קריאות */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    margin: 20px 10px;
+}
+
+.star-rating {
+    display: inline-block;
+    font-size: 2em;
+    color: gold;
+}
+.star-rating .star {
+    color: lightgray;
+}
+
+.star-rating .filled {
+    color: gold;
+}
+
+.opinionTable{
+    width: 60%;
+    margin:20px auto;
+
+}
+
+h1{
+    background-color: #ccc;
+    color: #080808;
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin-right: 30%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f0f0f0; /* רקע אפור לטבלה */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* פינות מעוגלות לטבלה */
+    overflow: hidden; /* כדי שהפינות המעוגלות יעבדו נכון */
+    font-size: 20px;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #014D46;
+    color: #fff;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #4CAF50; /* צבע הרקע */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* צבע הרקע בעת מעבר עכבר */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+button:before, button:after {
+    content: '';
+    position: absolute;
+    background-color: white; /* צבע הקווים של הפלוס */
+}
+
+button:before {
+    width: 60%;
+    height: 6px;
+}
+
+button:after {
+    width: 6px;
+    height: 60%;
+}
+
+@media (max-width: 768px) {
+    .main-content{
+        display: block;
+        
+    }
+
+    .opinionTable{
+        width: 90%;    
+    }
+
+}

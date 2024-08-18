@@ -1,0 +1,79 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    direction: rtl;
+    background-image: url('../../project/images/imgBack.jpeg'); /* הוספת רקע */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(1, 77, 70, 0.9); /* שינוי צבע עם שקיפות */
+    color: #fff; 
+}
+.header img {
+    height: 50px;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    display: inline;
+}
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.menu li a:hover {
+    color: aqua;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .header img {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
