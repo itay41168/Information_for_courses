@@ -39,4 +39,3 @@ The system allows students to interact with course data, select courses without 
 
 
 
-רוצה גם שאוסיף קובץ LICENSE או קובץ CONTRIBUTING.md למי שירצה לעזור בפרויקט בעתיד?
